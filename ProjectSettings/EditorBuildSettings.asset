@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/TextBulid.unity
+    guid: b40b4e3c0abbb6a449d29cea40745ddc
   m_configObjects: {}
