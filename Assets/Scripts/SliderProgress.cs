@@ -11,6 +11,7 @@ public class SliderProgress : MonoBehaviour
     public Camera MainCamera;  //主相机
     public Camera ARCamera;   //AR相机
     public int Speed;          //速度
+    public Canvas CanvasAfterLoading;
     // Update is called once per frame
     void Update()
     {
@@ -24,6 +25,7 @@ public class SliderProgress : MonoBehaviour
             Canvas2.gameObject.SetActive(false);
             MainCamera.gameObject.SetActive(false);
             ARCamera.gameObject.SetActive(true);
+            CanvasAfterLoading.gameObject.SetActive(true);
         }
     }
 }
