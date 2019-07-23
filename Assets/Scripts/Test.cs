@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Test : MonoBehaviour
 {
+    public GameObject aa;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +14,10 @@ public class Test : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.rotation = Quaternion.LookRotation(new Vector3(0, -1, 0));
+        
+    }
+    public void aaa()
+    {
+        Instantiate(aa).transform.localPosition=new Vector3(1,0,4);
     }
 }
