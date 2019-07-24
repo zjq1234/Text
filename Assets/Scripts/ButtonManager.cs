@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class ButtonManager : MonoBehaviour
 {
@@ -32,5 +34,18 @@ public class ButtonManager : MonoBehaviour
         }
         
         Canvas.gameObject.SetActive(true);
+    }
+
+    /// <summary>
+    /// 学习按钮
+    /// </summary>
+    public void OnStudyButtonClick()
+    {
+        SceneManager.LoadScene("LearningTop");
+    }
+
+    public void OnCanvasButtonClick()
+    {
+        SceneManager.LoadScene("Load");
     }
 }

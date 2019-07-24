@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/TJHScene/Test.unity
     guid: 19c13ff4b48743a459a2ec9ef9afd8e4
+  - enabled: 1
+    path: Assets/TJHScene/Land.unity
+    guid: d675e482cde499f4eb79731e7951a741
+  - enabled: 1
+    path: Assets/TJHScene/LearningTop.unity
+    guid: 556fd7ef7d8b9f540a333e6abf1c3d27
+  - enabled: 1
+    path: Assets/TJHScene/Load.unity
+    guid: d59f5eeb0b282c443a8758add9cc09c5
   m_configObjects: {}

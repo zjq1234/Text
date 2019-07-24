@@ -62,7 +62,6 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\ButtonManager.cs" />
     <Compile Include="Assets\Scripts\SliderProgress.cs" />
-    <Compile Include="Assets\Scripts\Test.cs" />
     <Compile Include="Assets\Scripts\UIShow.cs" />
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
     <None Include="Assets\Vuforia\Shaders\CameraDiffuse.shader" />
