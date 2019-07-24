@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/TJHScene/Load.unity
+- path: Assets/Scenes/TextBulid.unity
   isLoaded: 1
   isActive: 1
