@@ -7,6 +7,8 @@ public class UIShow : MonoBehaviour
 {
     public GameObject Land;
     public GameObject Register;
+
+
     public void OnRegisterButtonClick()
     {
         Land.gameObject.SetActive(false);
