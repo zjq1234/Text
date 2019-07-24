@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BeginBuilding.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\AugmentedFaces\Scripts\ARCoreAugmentedFaceMeshFilter.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\AugmentedFaces\Scripts\ARCoreAugmentedFaceRig.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\AugmentedFaces\Scripts\AugmentedFacesExampleController.cs" />
@@ -249,6 +250,7 @@
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPSession.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPSessionStatus.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPTrackingState.cs" />
+    <Compile Include="Assets\OpenBag.cs" />
     <Compile Include="Assets\Scripts\SliderProgress.cs" />
     <Compile Include="Assets\Scripts\Test.cs" />
     <Compile Include="Assets\Scripts\UIShow.cs" />
