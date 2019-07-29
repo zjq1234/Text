@@ -46,7 +46,7 @@ public class Gamemanager : MonoBehaviour
     public GameObject Canvas2;
 
     private Mono_Master sql;//创建数据库名称
-    private static int Sq1Name = 123045;
+    private static int Sq1Name = 12345;
 
     [HideInInspector]
     public string SqName = "";
@@ -57,6 +57,7 @@ public class Gamemanager : MonoBehaviour
 
     private void Awake()
     {
+        NewSqlite();
         int temp = PlayerPrefs.GetInt("Frist");//如果相同 说明不是第一次运行
         if (Sq1Name != temp)
         {
@@ -75,8 +76,9 @@ public class Gamemanager : MonoBehaviour
     public string NameCount;
     public void NewSqlite()
     {
+        string path = Application.persistentDataPath + Sq1Name + ".db"; ;
         PlayerPrefs.SetInt("Frist", Sq1Name);//第一次运行  
-        NameCount = "data source=" + Sq1Name + ".db";
+        NameCount = "data source=" + path;
         sql = new Mono_Master(NameCount);
     }
 

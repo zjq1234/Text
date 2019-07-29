@@ -33,9 +33,9 @@ public class Mono_Master:MonoBehaviour
             //打开数据库
             dbConnection.Open();
         }
-        catch //(Exception e)
+        catch (Exception e)
         {
-            // Debug.Log(e.Message);
+             Debug.Log(e.Message);
             Debug.Log("已经存在数据库");
         }
     }

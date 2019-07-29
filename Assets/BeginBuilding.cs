@@ -8,7 +8,7 @@ public class BeginBuilding : MonoBehaviour,IPointerClickHandler
 {
     public Canvas CanvasOfPlay;
     public Canvas CanvasAfterLoading;
-    public Camera ARCamera;
+    public GameObject ARCamera;
     public void OnPointerClick(PointerEventData eventData)
     {
         CanvasOfPlay.gameObject.SetActive(true);
