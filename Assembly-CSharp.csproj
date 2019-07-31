@@ -62,16 +62,21 @@
   <ItemGroup>
     <Compile Include="Assets\BeginBuilding.cs" />
     <Compile Include="Assets\ButtonOfNewBuilder.cs" />
+    <Compile Include="Assets\CreatNewPrefab.cs" />
+    <Compile Include="Assets\Material.cs" />
     <Compile Include="Assets\MouseEnterChangeImage.cs" />
     <Compile Include="Assets\OpenBag.cs" />
+    <Compile Include="Assets\OpenNewImage.cs" />
+    <Compile Include="Assets\OpenNewImageCloseOLdOne.cs" />
     <Compile Include="Assets\Scripts\ButtonManager.cs" />
     <Compile Include="Assets\Scripts\Gamemanager.cs" />
     <Compile Include="Assets\Scripts\InstantiatePrefabs.cs" />
     <Compile Include="Assets\Scripts\Mono_Master.cs" />
     <Compile Include="Assets\Scripts\SliderProgress.cs" />
+    <Compile Include="Assets\Scripts\Text5.cs" />
     <Compile Include="Assets\Scripts\UIShow.cs" />
     <Compile Include="Assets\SmallButton.cs" />
-    <Compile Include="Assets\Text5.cs" />
+    <Compile Include="Assets\Vuforia\OpenNewCanvas.cs" />
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
     <None Include="Assets\Vuforia\Shaders\CameraDiffuse.shader" />
     <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
