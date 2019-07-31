@@ -60,7 +60,44 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Vuforia\Editor\Scripts\OpenSourceInitializer.cs" />
+    <Compile Include="Assets\GoogleARCore\Examples\Common\Scripts\Editor\PointcloudVisualizerEditor.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\Analytics\ArcoreClearcut.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\Analytics\ArcoreSdkLog.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\ARCoreAnalytics.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\ARCoreIOSSupportHelper.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\ARCoreIOSSupportPreprocessBuild.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\ARCoreProjectSettingsGUI.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\ARCoreProjectSettingsProvider.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\ARCoreProjectSettingsWindow.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\ARCoreSupportedPreprocessBuild.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\AssetHelper.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\AugmentedImageDatabaseContextMenu.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\AugmentedImageDatabaseInspector.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\AugmentedImageDatabasePreprocessBuild.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\BackgroundJobExecutor.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\CloudAnchorPreprocessBuild.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\ExampleBuildHelper.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\ExamplePreprocessBuild.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\LogRequestUtils.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\PreprocessBuildBase.cs" />
+    <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\RequiredOptionalPreprocessBuild.cs" />
+    <None Include="Assets\GoogleARCore\Editor\ARCoreiOSDependencies.template" />
+    <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.100.0.txt" />
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>D:/Text7.22Two/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>D:/Text7.22Two/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>D:/Text7.22Two/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>D:/Text7.22Two/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>D:/Text7.22Two/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/2018.3.8f1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
     </Reference>
@@ -304,11 +341,38 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="Google.Protobuf">
+      <HintPath>D:/Text7.22Two/Assets/GoogleARCore/SDK/Plugins/Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.IOSResolver_v1.2.100.0">
+      <HintPath>D:/Text7.22Two/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.100.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.JarResolver_v1.2.100.0">
+      <HintPath>D:/Text7.22Two/Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.100.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.VersionHandler">
+      <HintPath>D:/Text7.22Two/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.VersionHandlerImpl_v1.2.100.0">
+      <HintPath>D:/Text7.22Two/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.100.0.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.Data">
       <HintPath>D:/Text7.22Two/Assets/Plugins/Mono.Data.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Data.Sqlite">
       <HintPath>D:/Text7.22Two/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data.SqliteClient">
+      <HintPath>D:/Text7.22Two/Assets/Plugins/Mono.Data.SqliteClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <HintPath>D:/Text7.22Two/Assets/Plugins/System.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <HintPath>D:/Text7.22Two/Assets/Plugins/System.EnterpriseServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security">
+      <HintPath>D:/Text7.22Two/Assets/Plugins/System.Security.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>D:/Text7.22Two/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
@@ -324,12 +388,6 @@
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>D:/Text7.22Two/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Data">
-      <HintPath>D:/Text7.22Two/Assets/plugins/Mono.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Data.Sqlite">
-      <HintPath>D:/Text7.22Two/Assets/plugins/Mono.Data.Sqlite.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:/2018.3.8f1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/TJHScene/Load.unity
+- path: Assets/TJHScene/Land.unity
   isLoaded: 1
   isActive: 1
