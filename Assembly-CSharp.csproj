@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CreatNewPrefab.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\AugmentedFaces\Scripts\ARCoreAugmentedFaceMeshFilter.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\AugmentedFaces\Scripts\ARCoreAugmentedFaceRig.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\AugmentedFaces\Scripts\AugmentedFacesExampleController.cs" />
@@ -246,6 +247,9 @@
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPSession.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPSessionStatus.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPTrackingState.cs" />
+    <Compile Include="Assets\Material.cs" />
+    <Compile Include="Assets\OpenNewImage.cs" />
+    <Compile Include="Assets\OpenNewImageCloseOLdOne.cs" />
     <Compile Include="Assets\Packages\TransformControl\Demo\TransformControlUI.cs" />
     <Compile Include="Assets\Packages\TransformControl\Demo\TransformDisplay.cs" />
     <Compile Include="Assets\Packages\TransformControl\Demo\XYZLabel.cs" />
@@ -269,6 +273,7 @@
     <Compile Include="Assets\Scripts\Zjq\InstantiatePrefabs.cs" />
     <Compile Include="Assets\Scripts\Zjq\Lib\LibRead.cs" />
     <Compile Include="Assets\Scripts\Zjq\Mono_Master.cs" />
+    <Compile Include="Assets\Vuforia\OpenNewCanvas.cs" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\PlaneGrid.shader" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\MobileDiffuseWithLightEstimation.shader" />
     <None Include="Assets\GoogleARCore\SDK\Materials\ARBackground.shader" />

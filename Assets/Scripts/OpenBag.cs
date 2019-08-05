@@ -4,9 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class OpenBag : MonoBehaviour,IPointerClickHandler
+public class OpenBag : MonoBehaviour, IPointerClickHandler
 {
     public Image ImageOfBag;
+    public Image[] images;
    
 
     // Start is called before the first frame update
@@ -31,9 +32,20 @@ public class OpenBag : MonoBehaviour,IPointerClickHandler
     {
         //ImageOfBag.gameObject.SetActive(true);
         if (ImageOfBag.gameObject.activeSelf == false)
-        { ImageOfBag.gameObject.SetActive(true); }
+        {
+            for (int i = 0; i < images.Length; i++)
+            {
+                images[i].gameObject.SetActive(false);
+            }
+            ImageOfBag.gameObject.SetActive(true);
+          
+        }
         else
         {
+            for (int i = 0; i < images.Length; i++)
+            {
+                images[i].gameObject.SetActive(false);
+            }
             ImageOfBag.gameObject.SetActive(false);
         }
     }
