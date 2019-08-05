@@ -47,7 +47,7 @@ public class InstantiatePrefabs : MonoBehaviour
       );
         buttoni.onClick.AddListener(delegate ()
         {
-            Gamemanager.StartSenceUsing.AddStep("", name2);
+           // Gamemanager.StartSenceUsing.AddStep("", name2);
         });
     }
 

@@ -60,8 +60,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ARTextPrefabs.cs" />
-    <Compile Include="Assets\BeginBuilding.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\AugmentedFaces\Scripts\ARCoreAugmentedFaceMeshFilter.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\AugmentedFaces\Scripts\ARCoreAugmentedFaceRig.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\AugmentedFaces\Scripts\AugmentedFacesExampleController.cs" />
@@ -248,20 +246,36 @@
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPSession.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPSessionStatus.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPTrackingState.cs" />
-    <Compile Include="Assets\OpenBag.cs" />
-    <Compile Include="Assets\Scripts\ButtonManager.cs" />
-    <Compile Include="Assets\Scripts\Gamemanager.cs" />
-    <Compile Include="Assets\Scripts\InstantiatePrefabs.cs" />
-    <Compile Include="Assets\Scripts\Mono_Master.cs" />
-    <Compile Include="Assets\Scripts\SliderProgress.cs" />
+    <Compile Include="Assets\Packages\TransformControl\Demo\TransformControlUI.cs" />
+    <Compile Include="Assets\Packages\TransformControl\Demo\TransformDisplay.cs" />
+    <Compile Include="Assets\Packages\TransformControl\Demo\XYZLabel.cs" />
+    <Compile Include="Assets\Packages\TransformControl\Scripts\TransformControl.cs" />
+    <Compile Include="Assets\Packages\TransformControl\Scripts\VectorExtension.cs" />
+    <Compile Include="Assets\PrefabGanager.cs" />
+    <Compile Include="Assets\Scripts\ARTextPrefabs.cs" />
+    <Compile Include="Assets\Scripts\BeginBuilding.cs" />
+    <Compile Include="Assets\Scripts\ButtonOfNewBuilder.cs" />
+    <Compile Include="Assets\Scripts\LearnTopp.cs" />
+    <Compile Include="Assets\Scripts\LibReadGam.cs" />
+    <Compile Include="Assets\Scripts\MouseEnterChangeImage.cs" />
+    <Compile Include="Assets\Scripts\OpenBag.cs" />
+    <Compile Include="Assets\Scripts\SmallButton.cs" />
     <Compile Include="Assets\Scripts\Text5.cs" />
-    <Compile Include="Assets\Scripts\UIShow.cs" />
+    <Compile Include="Assets\Scripts\TextCubes.cs" />
+    <Compile Include="Assets\Scripts\Tjh\ButtonManager.cs" />
+    <Compile Include="Assets\Scripts\Tjh\SliderProgress.cs" />
+    <Compile Include="Assets\Scripts\Tjh\UIShow.cs" />
+    <Compile Include="Assets\Scripts\Zjq\Gamemanager.cs" />
+    <Compile Include="Assets\Scripts\Zjq\InstantiatePrefabs.cs" />
+    <Compile Include="Assets\Scripts\Zjq\Lib\LibRead.cs" />
+    <Compile Include="Assets\Scripts\Zjq\Mono_Master.cs" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\PlaneGrid.shader" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\MobileDiffuseWithLightEstimation.shader" />
     <None Include="Assets\GoogleARCore\SDK\Materials\ARBackground.shader" />
     <None Include="Assets\GoogleARCore\Examples\AugmentedFaces\Materials\Shaders\AugmentedFaceOccluder.shader" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\PointCloud.shader" />
     <None Include="Assets\GoogleARCore\Examples\ComputerVision\Materials\EdgeDetectionBackground.shader" />
+    <None Include="Assets\Packages\TransformControl\Demo\Lattice.shader" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\MobileSpecularWithLightEstimation.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Text7.22Two/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

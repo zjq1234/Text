@@ -45,8 +45,8 @@ public class Gamemanager : MonoBehaviour
     public GameObject Canvas1;
     public GameObject Canvas2;
 
-    private Mono_Master sql;//创建数据库名称
-    private static int Sq1Name = 12345;
+    public  Mono_Master sql;//创建数据库名称
+    private static int Sq1Name = 1234501;
 
     [HideInInspector]
     public string SqName = "";
@@ -91,7 +91,7 @@ public class Gamemanager : MonoBehaviour
         if (RPass.text == ConfirmPass.text && RPass.text != null && RUser.text != null)
         {
             string sheetname = RUser.text + RPass.text;//数据表名称是 用户名加上密码
-            sql.CreateTable(sheetname, new string[] { "Name", "Position", "Rotation", "Scale" }, new string[] { "TEXT", "TEXT", "TEXT", "TEXT" });
+            sql.CreateTable(sheetname, new string[] { "UserName","PreName", "Position", "Rotation", "Scale" }, new string[] {  "TEXT", "TEXT", "TEXT", "TEXT", "TEXT"});
             Debug.Log("注册成功");//跳转场景 注册界面
             Land.gameObject.SetActive(true);
             Register.gameObject.SetActive(false);
@@ -191,24 +191,29 @@ public class Gamemanager : MonoBehaviour
         }
         try
         {
-            sql.InsertValues(signname, new string[] { strs[0], strs[1], strs[2], strs[3] });
+            str = "'" + str + "'";
+
+            sql.InsertValues(signname, new string[] { str,strs[0], strs[1], strs[2], strs[3] });
         }
         catch
         {
             Debug.Log("插入数据异常");
         }
+        
 
-        SqliteDataReader reader = sql.ReadFullTable(signname);
+       SqliteDataReader reader = sql.ReadFullTable(signname);
         while (reader.Read())
         {
-            //读取Name
-            Debug.Log(reader.GetString(reader.GetOrdinal("Name")));
-            //读取Position
-            Debug.Log(reader.GetString(reader.GetOrdinal("Position")));
-            //读取Rotation
-            Debug.Log(reader.GetString(reader.GetOrdinal("Rotation")));
-            //读取Scale
-            Debug.Log(reader.GetString(reader.GetOrdinal("Scale")));
+
+            //Debug.Log(reader.GetString(reader.GetOrdinal("UserName")));
+            ////读取Name
+            //Debug.Log(reader.GetString(reader.GetOrdinal("PreName")));
+            ////读取Position
+            //Debug.Log(reader.GetString(reader.GetOrdinal("Position")));
+            ////读取Rotation
+            //Debug.Log(reader.GetString(reader.GetOrdinal("Rotation")));
+            ////读取Scale
+            //Debug.Log(reader.GetString(reader.GetOrdinal("Scale")));
         }
     }
 
