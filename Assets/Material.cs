@@ -3,10 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using System;
 
 public class Material : MonoBehaviour, IPointerClickHandler
 {
     public Image image;
+    private Shader shader;
+
+    public Material(Shader shader)
+    {
+        this.shader = shader;
+    }
+
     public void OnPointerClick(PointerEventData eventData)
     {
         image.gameObject.SetActive(true);
@@ -22,5 +30,15 @@ public class Material : MonoBehaviour, IPointerClickHandler
     void Update()
     {
         
+    }
+
+    internal void SetInt(string v, int always)
+    {
+        throw new NotImplementedException();
+    }
+
+    internal void SetPass(int v)
+    {
+        throw new NotImplementedException();
     }
 }
