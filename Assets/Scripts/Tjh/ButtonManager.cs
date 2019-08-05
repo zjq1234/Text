@@ -10,6 +10,7 @@ public class ButtonManager : MonoBehaviour
     public Canvas Canvas;  // 最开始的画布
     public Image[] StepImage;  //具体介绍数组
     public Scrollbar[] Scrollbars;  //滑动条
+    public GameObject[] objs;
     /// <summary>
     /// 点击每一个主场景按钮的时间
     /// </summary>
@@ -46,6 +47,9 @@ public class ButtonManager : MonoBehaviour
 
     public void OnCanvasButtonClick()
     {
-        SceneManager.LoadScene("Load");
+        //SceneManager.LoadScene("Load");
+        objs[0].gameObject.SetActive(true);
+        objs[1].gameObject.SetActive(false);
+
     }
 }
